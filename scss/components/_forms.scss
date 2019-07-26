@@ -1,0 +1,22 @@
+.form {
+    display: block;
+    margin-bottom: em(10px);
+    margin-left: 0;
+    @include e(label) {
+        @include m(hidden) {
+            @extend %hidden;
+        }
+    }
+    @include e(input) {
+        @extend %form__input;
+    }
+
+    @include mq(medium) {
+        margin-left: em(60px);
+    }
+    
+}
+
+
+
+

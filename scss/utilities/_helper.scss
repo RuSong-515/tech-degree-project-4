@@ -1,0 +1,3 @@
+@if variable-exists($name: font-url-google){
+    @import url($font-url-google);
+}

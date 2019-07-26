@@ -1,0 +1,29 @@
+.nav {
+    @include e(item) {
+        @extend %nav-item-disp;
+        text-align: center;
+        color: palette(grey);
+        font-size: em(20px);
+        @include mq(medium) {
+            position: relative;
+            display: inline-block;
+            top: em(25px);
+            left: em(120px);
+        }
+    }
+
+    a {
+        @extend %nav-link;
+        color: palette(grey);
+        &:hover {
+            @extend %nav-link-hover;
+        }
+    }
+
+}
+
+
+
+
+
+

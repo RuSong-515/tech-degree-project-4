@@ -1,0 +1,25 @@
+.container {
+    font-size: $base__font-size;
+    line-height: ($base__line/$base__font-size);
+    font-family: $font-family-primary;
+    width: 90%;
+    @extend %margin-auto;
+    color: palette(grey);
+
+}
+
+.headline--primary {
+    @extend %hdline-pri;
+}
+
+.headline--secondary {
+    @extend %hdline-sec;
+}
+
+.link {
+    @extend %link;
+}
+
+.blockquote {
+   @extend %blockquote;
+}

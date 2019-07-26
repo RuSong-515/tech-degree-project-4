@@ -1,0 +1,77 @@
+// Font Style
+
+$font-url-google     : "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600i,700,900&display=swap";
+
+$font-family-primary  : 'Source Sans Pro', Arial, sans-serif;
+$font-family-secondary:  Arial, sans-serif;
+
+// Font Weight
+
+$font-weight--light           : 300;
+$font-weight--medium          : 400;
+$font-weight--semi-bold-italic: 600i;
+$font-weight--bold            : 700;
+$font-weight--ultra-bold      : 900;
+
+//Text
+$base__font-size: 16px;
+$base__line: 24px;
+
+// Base color
+
+$white: #fff;
+$black: #0b0b0b;
+$grey: #6a6e72;
+
+$aqua: #00d0ff;
+$spring: #6eeec3;
+$emerald: #36ce63;
+$roman: #d85f63;
+$orange: #f3621b;
+$purple: #9d69ba;
+
+// Color usage
+
+$color-primary:   $spring;
+$color-secondary: $aqua;
+
+// UI color
+$ui-color: (
+  default: $aqua,
+  success: $emerald,
+  error  : $roman,
+  warning: $orange,
+  info   : $purple,
+);
+
+//Color Palette
+ $palettes:( 
+    grey: (
+      light: lighten($grey, 15%),
+      base: $grey,
+      dark: darken($grey, 8%),
+    )
+ );
+ 
+ //Theme color
+ $theme-color: (
+    12: #93edc6,
+     6: #3497ad,
+     4: #80e1f2,
+     3: #d5b3f2,
+     5: #96cc8b,
+     7: #dba0a0,
+     8: #fa9f78,
+);
+
+// Image path
+$path--rel: "../img";
+
+//Breakpoints
+$screen-s: 480px;
+$screen-m: 769px;
+$screen-l: 1400px;
+
+//border radius
+$br--defaul: .3em;
+

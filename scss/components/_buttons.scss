@@ -1,0 +1,29 @@
+.btn {
+    @include bg-colors($ui-color);
+}
+
+[class^="btn--"] {
+    @extend %btn;
+    @extend %btn-txt;
+    margin-top: em(25px);
+    
+    
+}
+
+
+
+.grid__col--12 {
+    @include mq(medium) {
+        display: flex;
+        justify-content: space-around;
+        [class^="btn--"] {
+            width: 15%;
+        }
+    }
+    
+}
+    
+
+
+
+

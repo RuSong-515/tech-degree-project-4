@@ -1,0 +1,27 @@
+
+.img--logo,
+.img--frame,
+.img--avatar {
+    @extend %center;
+    @extend %margin-auto;
+    margin-bottom: em(36px);
+} 
+
+.img {
+    @include m(logo) {
+        margin-top: em(16px);
+    }
+
+    @include m(avatar) {
+        display:  block;
+        margin-top: em(16px);
+        margin-bottom: em(24px);
+    }
+
+    @include m(frame) {
+        padding: em(13px);
+        border: solid 1px rgba($grey, 0.3);
+    }
+}
+
+

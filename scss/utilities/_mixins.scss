@@ -1,0 +1,60 @@
+// Media queries
+@mixin mq($break) {
+  @if $break=="small" {
+    @media (min-width: $screen-s) {
+      @content;
+    }
+  }
+
+  @if $break=="medium" {
+    @media (min-width: $screen-m - 1) {
+      @content;
+    }
+  }
+
+  @else if $break=="large" {
+    @media (min-width: $screen-l) {
+      @content;
+    }
+  }
+}
+
+// Background color
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{theme} {
+      background-color: $color;
+    }
+  }
+}
+
+//Selector
+@mixin m($modifier) {
+  &--#{$modifier} {
+     @content;
+  }
+}
+
+@mixin e($element) {
+  &__#{$element} {
+     @content;
+  }
+}
+
+//Color modifier
+@mixin bg-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme} {
+			background-color: $color;    
+		}
+	}
+}
+
+// doubly
+
+@mixin doubly($margin: 1em) {
+	& + & {
+	  margin-left: $margin;
+    @content;
+	}
+}
