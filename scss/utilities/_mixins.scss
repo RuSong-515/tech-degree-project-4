@@ -7,7 +7,7 @@
   }
 
   @if $break=="medium" {
-    @media (min-width: $screen-m - 1) {
+    @media (min-width: $screen-m + 1 ) {
       @content;
     }
   }

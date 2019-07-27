@@ -1,14 +1,23 @@
 .nav {
+    @include mq(medium) {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 15%;
+    }
     @include e(item) {
         @extend %nav-item-disp;
         text-align: center;
         color: palette(grey);
         font-size: em(20px);
         @include mq(medium) {
-            position: relative;
-            display: inline-block;
-            top: em(25px);
-            left: em(120px);
+            padding-top: em(25px);
+            &:last-child {
+                margin-right: em(100px);
+            }
+            
+
+            
+           
         }
     }
 
@@ -21,6 +30,14 @@
     }
 
 }
+
+// .grid__col--9 {
+//     display: flex;
+    
+// }
+
+
+
 
 
 
