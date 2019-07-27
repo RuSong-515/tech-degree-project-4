@@ -1,7 +1,6 @@
 .nav {
     @include mq(medium) {
-        display: flex;
-        justify-content: space-evenly;
+        @include flex;
         margin-left: 15%;
     }
     @include e(item) {

@@ -58,3 +58,9 @@
     @content;
 	}
 }
+
+//Flexbox
+@mixin flex {
+  display: flex;
+  justify-content: space-evenly;
+}
